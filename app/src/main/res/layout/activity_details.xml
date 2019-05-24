@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/backdropImg"
+        android:src="@drawable/nasgor_backdrop"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/profilImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/nasgor_poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backdropImg" />
+
+    <TextView
+        android:id="@+id/tv_item_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/profilImg"
+        app:layout_constraintTop_toBottomOf="@+id/backdropImg"
+        tools:text="Nasi Goreng" />
+
+    <TextView
+        android:id="@+id/tv_item_asal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/profilImg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_nama"
+        tools:text="Chinese Food" />
+
+    <TextView
+        android:id="@+id/porsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="48dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_nama"
+        tools:text="makanan/porsi" />
+
+    <TextView
+        android:id="@+id/kalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Kalori = 169 g"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/porsi" />
+
+    <TextView
+        android:id="@+id/lemak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:text="lemak = 169 g"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kalori" />
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="Protein = 169 g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/porsi" />
+
+    <TextView
+        android:id="@+id/karbo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:text="karbo = 169 g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/protein" />
+
+
+
+</android.support.constraint.ConstraintLayout>
